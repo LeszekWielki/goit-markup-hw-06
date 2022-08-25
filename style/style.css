@@ -124,7 +124,6 @@ a {
   color: #757575;
   letter-spacing: 2%;
   margin-right: 50px;
-
   display: flex;
 }
 
@@ -516,6 +515,7 @@ header .first_div {
 
 .second_footer_cont {
   margin-left: 70px;
+  /* border: 1px red solid; */
 }
 
 .wrap {
@@ -705,10 +705,13 @@ header .first_div {
   width: 448px;
   height: 40px;
   font-size: large;
+  padding-left: 42px;
 }
 
 .input-comment {
   margin-top: 4px;
+  padding: 12px 16px;
+  outline: none;
 }
 
 .modal-input p {
@@ -719,6 +722,10 @@ header .first_div {
   letter-spacing: 0.01em;
   text-align: left;
   color: #757575;
+}
+
+.modal-input label {
+  position: relative;
 }
 
 .input-comment {
@@ -734,10 +741,30 @@ header .first_div {
   margin-bottom: 30px;
   justify-content: center;
 }
-
+.checkbox-modal input:focus {
+  outline: none;
+}
+.checkbox-modal:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border: 1px var(--inative) solid;
+  position: absolute;
+  left: 45px;
+  display: block;
+}
 .checkbox-modal input {
   margin-right: 7px;
+  /* appearance: none; */
 }
+.checkbox-label:checked + .checkbox-modal:before {
+  background-color: black;
+}
+
+/* .checkbox-modal p:before {
+  content: url("images/icons.svg/#icon-check");
+  position: absolute;
+} */
 
 .submit {
   width: 200px;
@@ -765,9 +792,135 @@ header .first_div {
 }
 
 .input-name:not(:placeholder-shown):valid {
-  border-color: green;
+  border-color: #21212133;
 }
 
 .input-name:not(:placeholder-shown):invalid {
   border-color: red;
+}
+.input-name:focus {
+  border: var(--brand-color) 1px solid;
+  padding-left: 20px;
+  outline: none;
+  padding-left: 42px;
+}
+.input-name:focus {
+  border: var(--brand-color) 1px solid;
+  padding-left: 20px;
+  outline: none;
+  padding-left: 42px;
+}
+
+.svg_person {
+  position: absolute;
+  top: 101px;
+  left: 50px;
+  height: 20px;
+  width: 20px;
+}
+
+.label {
+  position: relative;
+}
+
+.svg_tel {
+  position: absolute;
+  left: 55px;
+  top: 175px;
+  height: 13px;
+  width: 13px;
+}
+
+.svg_mail {
+  position: absolute;
+  left: 55px;
+  top: 243px;
+  height: 13px;
+  width: 13px;
+}
+
+/* .footer_container {
+  /* border: 1px red solid; 
+} */
+
+.newsletter-list li {
+  display: inline;
+  position: relative;
+  top: 30px;
+}
+
+.newsletter-button {
+  height: 50px;
+  width: 200px;
+  background-color: var(--brand-color);
+  border-style: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  margin-top: 1px;
+}
+
+.newsletter-email {
+  height: 50px;
+  width: 358px;
+  background-color: var(--background);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 16px;
+  border-radius: 4px;
+  font-size: medium;
+  position: relative;
+  top: -1px;
+  outline: none;
+  color: var(--inative);
+}
+
+.newsletter {
+  margin-left: 78px;
+  margin-right: 12px;
+}
+.newsletter-button:before {
+  content: "Zapisz się";
+  height: 30px;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: white;
+}
+.newsletter-button-icon {
+  height: 24px;
+  width: 24px;
+  top: 5px;
+  position: relative;
+  margin-left: 24px;
+}
+
+.newsletter-list {
+  display: inline-block;
+}
+
+.newsletter h4 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: white;
+  position: relative;
+  top: 12px;
+}
+
+.input-comment:focus {
+  border: var(--brand-color) 1px solid;
+  /* padding-left: 20px; */
+  /* outline: none; */
+  /* padding-left: 42px; */
+}
+
+input-name:hover .icon_svgg {
+  color: white;
 }

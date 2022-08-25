@@ -472,6 +472,32 @@
               </li>
             </ul>
           </div>
+          <div class="newsletter">
+            <h4>WPISZ SIE DO NEWSLETTERA</h4>
+            <ul class="newsletter-list">
+              <li>
+                <label class="newsletter-label">
+                  <input
+                    class="newsletter-email"
+                    type="email"
+                    name="mail"
+                    placeholder="E-mail"
+                  />
+                </label>
+                <li>
+                  <button type="submit" class="newsletter-button">
+                
+                    <svg class="newsletter-button-icon">
+                      <use
+                        class="icon-send"
+                        href="./images/icons.svg#icon-send"
+                      ></use>
+                    </svg>
+                  </button>
+                </li>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
@@ -488,7 +514,7 @@
           <label>
             <p>Imię</p>
             <input
-              class="input-name"
+              class="input-name label"
               type="text"
               name="Username"
               required
@@ -496,6 +522,11 @@
               minlength="5"
             />
           </label>
+          <svg class="svg_person">
+            <use
+              class="icon-svgg"
+              href="./images/icons.svg#icon-person-black"></use>
+          </svg>
           <label>
             <p>Telefon</p>
             <input
@@ -519,6 +550,9 @@
               placeholder=" "
             />
           </label>
+          <svg class="svg_mail">
+            <use class="icon-svgg" href="./images/icons.svg#icon-mail-2"></use>
+          </svg>
           <label class="commentary">
             <p>Komentarz</p>
             <textarea
@@ -527,12 +561,17 @@
               name="Commentary"
               placeholder="Wprowadź tekst"
               rows="5"
+              resize="none"
             ></textarea>
           </label>
+          <svg class="svg_tel">
+            <use class="icon-svgg" href="./images/icons.svg#icon-tel-2"></use>
+          </svg>
           <div>
-            <label class="checkbox-modal">
-              <input type="checkbox" />
-              <p>Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</p>
+            <label class="checkbox-modal" for="checkbox-modal">
+              <input type="checkbox" id="checkbox" class="checkbox-label"
+               required/>
+              <p class="label-paragraph">Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</p>
             </label>
           </div>
         </div>
