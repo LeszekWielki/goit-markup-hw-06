@@ -511,13 +511,13 @@
         </button>
         <h3 class="h3">Zostaw swoje dane w formularzu poniżej</h3>
         <div class="modal-input">
-          <label>
+          <p>Imię</p>
+          <label class="label-box">
             <svg class="svg_person">
               <use
                 class="icon-svgg"
                 href="./images/icons.svg#icon-person-black"></use>
             </svg>
-            <p>Imię</p>
             <input
               class="input-name label"
               type="text"
@@ -527,14 +527,13 @@
               minlength="5"
             />
           </label>
-          
-          <label>
+          <p>Telefon</p>
+          <label class="label-box">
             <svg class="svg_tel">
               <use class="icon-svgg" href="./images/icons.svg#icon-tel-2"></use>
             </svg>
-            <p>Telefon</p>
             <input
-              class="input-name"
+              class="input-name label"
               type="tel"
               name="Telephone"
               required
@@ -544,11 +543,12 @@
               pattern="^\d\d\d\d\d\d\d\d\d$"
             />
           </label>
-          <label>
+          <p>Email</p>
+          <label class="label-box">
             <svg class="svg_mail">
               <use class="icon-svgg" href="./images/icons.svg#icon-mail-2"></use>
             </svg>
-            <p>Email</p>
+            
             <input
               class="input-name"
               type="email"
@@ -557,9 +557,9 @@
               placeholder=" "
             />
           </label>
-
+          <p>Komentarz</p>
           <label class="commentary">
-            <p>Komentarz</p>
+           
             <textarea
               class="input-comment"
               type="text"
@@ -571,11 +571,16 @@
           </label>
           
           <div>
+            
             <label class="checkbox-modal" for="checkbox-modal">
-              <input type="checkbox" id="checkbox" class="checkbox-label"
-               required/>
-              <p class="label-paragraph">Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</p>
-            </label>
+              <svg class="checkbox-modal-svg">
+                <use href="./images/icons.svg#icon-icon-check"></use>
+              </svg>
+            </label> 
+              <input type="checkbox" name="box" id="checkbox-label" class="checkbox-label"
+               required/> 
+               <p>Oświadczam iż akceptuję <a href="Regulamin">Regulamin</a> i <a href="Polityka Prywatności">Politykę Prywatności</a></p>.
+              
           </div>
         </div>
         <button class="submit" type="submit">Wyślij</button>
