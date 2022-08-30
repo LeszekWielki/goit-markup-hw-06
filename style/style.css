@@ -729,13 +729,6 @@ header .first_div {
   color: #757575;
 }
 
-.modal-input label {
-  /* position: relative; */
-  /* display: inline-flex; */
-  /* border: 1px solid grey; */
-  /* border-radius: 4px; */
-}
-
 .input-comment {
   border-radius: 4px;
   border: 1px solid #21212133;
@@ -948,14 +941,14 @@ input-name:hover .icon_svgg {
   text-align: left;
 }
 
-.checkbox-label:checked + .checkbox-modal svg::before {
-  appearance: none;
+.checkbox-modal:checked .checkbox-modal-svg {
+  visibility: visible;
 }
 
-/* .checkbox-modal::before {
-  content: "";
-  height: 10px;
-  width: 10px;
-  border: 1px solid red;
-  position: relative;
-} */
+.checkbox-modal-svg {
+  visibility: hidden;
+}
+
+checkbox-label:checked {
+  fill: blue;
+}
