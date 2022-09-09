@@ -831,7 +831,7 @@ header .first_div {
   z-index: 2;
 }
 
-.label-box:hover svg {
+.label-box:hover > svg {
   fill: var(--brand-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -912,7 +912,7 @@ header .first_div {
   border: var(--brand-color) 1px solid;
 }
 
-input-name:hover .icon_svgg {
+.input-name:hover .icon_svgg {
   color: white;
 }
 
@@ -924,7 +924,8 @@ input-name:hover .icon_svgg {
   height: 20px;
   width: 20px;
   z-index: 2;
-  position: relative;
+  position: absolute;
+  left: 15px;
 }
 
 .checkbox-modal a {
@@ -941,29 +942,37 @@ input-name:hover .icon_svgg {
   text-align: left;
 }
 
-.checkbox-modal:checked .checkbox-modal-svg {
-  visibility: visible;
-}
-
 .checkbox-modal-svg {
   visibility: hidden;
 }
 
 .checkbox-label:checked {
-  /* background-color: green;
-  border: 1px solid green; */
-  background-image: url(./images/icons.svg#icon-send);
-  outline: 1px solid;
+  border: none;
+  height: 16px;
+  width: 16px;
+  z-index: 2;
 }
 
-.checkbox-label:focus {
+/* .checkbox-modal-svg:checked {
+  visibility: hidden;
+} */
+
+/* .checkbox-label:focus {
   border: 4px solid hsla(0, 0%, 0%, 0.4);
   outline: none;
-}
+} */
 
 .checkbox-label {
-  appearance: none;
   border: 1px solid grey;
-  height: 20px;
-  width: 20px;
+  height: 16px;
+  width: 16px;
+  border-radius: 2px;
+  appearance: none;
+}
+
+.checkbox-label:checked + .checkbox-modal-svg {
+  z-index: 1;
+  visibility: visible;
+  height: 16px;
+  width: 15px;
 }
