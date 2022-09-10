@@ -944,7 +944,8 @@ header .first_div {
 
 .checkbox-modal-svg {
   visibility: hidden;
-  margin-top: 3px;
+  margin-top: 4px;
+  margin-right: 1px;
 }
 
 .checkbox-label:checked {
@@ -965,11 +966,11 @@ header .first_div {
 
 .checkbox-label {
   border: 1px solid grey;
-  height: 16px;
-  width: 16px;
+  height: 14px;
+  width: 15px;
   border-radius: 2px;
   appearance: none;
-  margin-top: 3px;
+  margin-top: 5px;
 }
 
 .checkbox-label:checked + .checkbox-modal-svg {
